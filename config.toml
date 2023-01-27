@@ -1,5 +1,0 @@
-port = 8080
-
-[greeting]
-to = "Tom"
-content = "Good Morning!"

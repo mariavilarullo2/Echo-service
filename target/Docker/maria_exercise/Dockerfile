@@ -13,6 +13,6 @@ WORKDIR /home/ballerina
 COPY maria-maria_exercise-0.1.0.jar /home/ballerina
 
 EXPOSE  9090
-USER ballerina
+USER 15000
 
 CMD java -Xdiag -cp "maria-maria_exercise-0.1.0.jar:jars/*" 'maria/maria_exercise/0/$_init' || cat ballerina-internal.log

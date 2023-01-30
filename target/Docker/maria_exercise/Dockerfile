@@ -10,7 +10,6 @@ RUN addgroup troupe \
     && rm -rf /var/cache/apk/*
 
 WORKDIR /home/ballerina
-COPY maria-maria_exercise-0.1.0.jar /home/ballerina
 
 EXPOSE  9090
 USER 15000

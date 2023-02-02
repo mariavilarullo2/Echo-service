@@ -1,4 +1,2 @@
-string hello = "hi";
-function init() {
-    return hello;
-}
+configurable string hello = ?;
+

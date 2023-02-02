@@ -96,6 +96,9 @@ dependencies = [
 	{org = "ballerina", name = "jballerina.java"},
 	{org = "ballerina", name = "lang.value"}
 ]
+modules = [
+	{org = "ballerina", packageName = "io", moduleName = "io"}
+]
 
 [[package]]
 org = "ballerina"
@@ -248,6 +251,18 @@ dependencies = [
 
 [[package]]
 org = "ballerina"
+name = "test"
+version = "0.0.0"
+scope = "testOnly"
+dependencies = [
+	{org = "ballerina", name = "jballerina.java"}
+]
+modules = [
+	{org = "ballerina", packageName = "test", moduleName = "test"}
+]
+
+[[package]]
+org = "ballerina"
 name = "time"
 version = "2.2.0"
 dependencies = [
@@ -275,16 +290,19 @@ modules = [
 ]
 
 [[package]]
-org = "maria"
-name = "maria_exercise"
+org = "marianew"
+name = "testingdocker"
 version = "0.1.0"
 dependencies = [
 	{org = "ballerina", name = "cloud"},
 	{org = "ballerina", name = "http"},
+	{org = "ballerina", name = "io"},
+	{org = "ballerina", name = "test"},
 	{org = "ballerinai", name = "observe"}
 ]
 modules = [
-	{org = "maria", packageName = "maria_exercise", moduleName = "maria_exercise"}
+	{org = "marianew", packageName = "testingdocker", moduleName = "testingdocker"},
+	{org = "marianew", packageName = "testingdocker", moduleName = "testingdocker.mariamod"}
 ]
 
 

@@ -1,5 +1,5 @@
 import ballerina/http;
-configurable string name=?;
+import module/service as _;
 
 service / on new http:Listener(9090) {
     resource function get greeting() returns string {

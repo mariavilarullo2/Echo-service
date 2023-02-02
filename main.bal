@@ -1,6 +1,6 @@
 import ballerina/http;
 import testingdocker.mariamod as _;
-
+configurable string mariasd = ?;
 service / on new http:Listener(9090) {
     resource function get greeting() returns string {
         string name = "maria";

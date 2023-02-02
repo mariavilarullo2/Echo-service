@@ -1,9 +1,9 @@
 
-configurable string names = ?;
+configurable string greatasd = ?;
 
 public function hello(string name) returns string {
     if !(name is "") {
-        return "Hello, " + name;
+        return "Hello, " + greatasd;
     }
-    return "Hello, World!";
+    return greatasd + "Hello, World!";
 }
